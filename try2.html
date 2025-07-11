@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Physio Home Care</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f6f9ff;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #eef3fb, #f6f9ff);
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      color: #111;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      max-width: 600px;
+      margin: auto;
+      color: #666;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 30px 20px;
+    }
+
+    .hero img {
+      width: 250px;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+
+    .highlight {
+      background: #d9ffe6;
+      color: #006400;
+      padding: 5px 12px;
+      border-radius: 10px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .stat-box {
+      background: #fff;
+      border-radius: 10px;
+      margin: 10px;
+      padding: 20px;
+      width: 140px;
+      text-align: center;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    }
+
+    .stat-box strong {
+      font-size: 1.4rem;
+      color: #007bff;
+    }
+
+    .services {
+      padding: 40px 20px;
+      background: #fff;
+      text-align: center;
+    }
+
+    .services h2 {
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .service-card {
+      background: #f9f9f9;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .service-card h3 {
+      margin: 10px 0;
+      color: #111;
+    }
+
+    .extra-services {
+      padding: 40px 20px;
+      text-align: center;
+      background: #f9fbfe;
+    }
+
+    .extra-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .extra-card {
+      background: #f4f7fa;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .extra-card h3 {
+      margin-top: 15px;
+      color: #2c3e50;
+    }
+
+    .extra-card p {
+      color: #555;
+    }
+
+    .extra-card span {
+      font-size: 32px;
+      display: block;
+    }
+
+    .floating-buttons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .floating-buttons a {
+      width: 50px;
+      height: 50px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+
+    .floating-buttons img {
+      width: 24px;
+      height: 24px;
+    }
+
+    @media (min-width: 768px) {
+      .hero {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .hero img {
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="highlight">BEST MEDICAL CARE</div>
+    <h1>Heal from pain at your own home</h1>
+    <div class="stats">
+      <div class="stat-box">
+        <strong>100+</strong>
+        <div>Patient Treatments</div>
+      </div>
+      <div class="stat-box">
+        <strong>175+</strong>
+        <div>Expert Doctors</div>
+      </div>
+      <div class="stat-box">
+        <strong>93.7%</strong>
+        <div>Effective Relief</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="text-content">
+      <h2>Dr. Sevant P Desai</h2>
+    </div>
+   <img src="https://res.cloudinary.com/dmvjkykjn/image/upload/v1752249680/WhatsApp_Image_2025-07-09_at_16.36.00_25dd8130_sbskqb.jpg" alt="Dr. Sevant P Desai">
+
+  </div>
+
+  <section class="services">
+    <h2>We Provide Surgery-Free Relief From Pain</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>Shoulder Pain</h3>
+        <p>Frozen shoulder, injuries, and aches treated at home.</p>
+      </div>
+      <div class="service-card">
+        <h3>Elbow Pain</h3>
+        <p>Joint therapy and headache management using eLaser Calmative.</p>
+      </div>
+      <div class="service-card">
+        <h3>Neck Pain</h3>
+        <p>Posture correction and chronic pain relief for tech-related strain.</p>
+      </div>
+      <div class="service-card">
+        <h3>Knee Pain</h3>
+        <p>Therapy for arthritis, injury, and aging-related knee pain.</p>
+      </div>
+      <div class="service-card">
+        <h3>Foot Pain</h3>
+        <p>Foot alignment, heel pain, insoles, and specialized treatments.</p>
+      </div>
+      <div class="service-card">
+        <h3>Wrist Pain</h3>
+        <p>Therapy for overuse and carpal tunnel issues.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="extra-services">
+    <h2>Our Services</h2>
+    <div class="extra-grid">
+      <div class="extra-card">
+        <span>🏠</span>
+        <h3>Home Visits</h3>
+        <p>Convenient at-home sessions that save travel time and allow treatment in familiar surroundings.</p>
+      </div>
+      <div class="extra-card">
+        <span>🩺</span>
+        <h3>Personalized Care</h3>
+        <p>Customized treatment plans based on thorough assessment of your condition and goals.</p>
+      </div>
+      <div class="extra-card">
+        <span>⏱️</span>
+        <h3>Flexible Scheduling</h3>
+        <p>Available weekdays and weekends to fit your busy schedule.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="floating-buttons">
+    <a href="https://wa.me/918160711609" target="_blank">
+      <img src="https://res.cloudinary.com/dmvjkykjn/image/upload/v1752250451/add_call_24dp_000000_FILL0_wght400_GRAD0_opsz24_lalrrp.png" alt="WhatsApp">
+    </a>
+    <a href="tel:+911234567890">
+      <img src="https://cdn-icons-png.flaticon.com/512/15/15957.png" alt="Phone">
+    </a>
+  </div>
+</body>
+</html>
